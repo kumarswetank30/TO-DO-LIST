@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    
+ <main class="todo-list-container">
+    <!-- APP HEADING -->
+    <div class="app-heading">
+        <h1>My To-Do List</h1>
+        <p>organize your tasks and stay productive</p>
+    </div>
+
+<!-- TASK FORM -->
+ <form id="task-form" class="task-form">
+
+    <input type="text" id="task-input" placeholder="Enter your task" required>
+    <button type="submit" class="add-btn">
+        <i class="fa-solid fa-plus"></i>
+        Add Task
+    </button>
+ </form>
+
+ <!-- FILTER BUTTON -->
+
+ <div class="filter-buttons">
+    <button type="button" class="filter-btn active" data-filter="all">
+        All
+    </button>
+
+    <button type="button" class="filter-btn" data-filter="pending">
+        Pending
+    </button>
+
+    <button type="button" class="filter-btn" data-filter="completed">
+        Completed
+    </button>
+ </div>
+
+ <!-- TASK LIST -->
+  <ul id="task-list" class="task-list">
+    
+  </ul>
+
+  <!-- TASK SUMMARY -->
+   <div class="task-summary">
+    <p>
+        Pending:
+        <span id="pending-count">0</span>
+    </p>
+
+    <p>
+        Completed:
+        <span id="completed-count">0</span>
+    </p>
+   </div>
+ </main>
+ <script src="script.js"></script>
+</body>
+</html>
